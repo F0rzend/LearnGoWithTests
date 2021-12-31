@@ -1,4 +1,4 @@
-package main
+package hello
 
 import "fmt"
 
@@ -30,7 +30,4 @@ func Hello(name, language string) string {
 	}
 
 	return result
-}
-
-func main() {
 }
