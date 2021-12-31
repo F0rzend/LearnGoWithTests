@@ -10,7 +10,7 @@ func TestHello(t *testing.T) {
 		}
 	}
 
-	t.Run("saying hello to people", func(t *testing.T) {
+	t.Run("with name", func(t *testing.T) {
 		t.Run("in Russian", func(t *testing.T) {
 			got := Hello("Костя", "Russian")
 			want := "Привет, Костя!"
@@ -30,7 +30,7 @@ func TestHello(t *testing.T) {
 		})
 	})
 
-	t.Run("use World as name when an empty string is supplied", func(t *testing.T) {
+	t.Run("without name", func(t *testing.T) {
 		t.Run("in Russian", func(t *testing.T) {
 			got := Hello("", "Russian")
 			want := "Привет, Мир!"
